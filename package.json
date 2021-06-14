@@ -7,7 +7,9 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.0",
-    "vite": "^2.3.5"
+    "vite": "^2.3.5",
+    "predeploy": "npm run build && cp -r public dist/public",
+    "deploy": "gh-pages -d dist",
   },
   "dependencies": {
     "three": "^0.129.0"
